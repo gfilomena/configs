@@ -293,6 +293,10 @@ function installKitty {
   yay -Sy --noconfirm kitty
 }
 
+function installBolt {
+  yay -Sy --noconfirm bolt
+}
+
 ## CONFIGURATION
 
 function configureGit {

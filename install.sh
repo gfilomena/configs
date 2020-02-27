@@ -243,6 +243,13 @@ else
   echo KITTY ALREADY INSTALLED
 fi
 
+if ! [ -x "$(command -v bolt)" ]; then
+  echo INSTALLING BOLT
+  installBolt
+else
+  echo BOLT ALREADY INSTALLED
+fi
+
 echo '# CONFIGURATIONS'
 
 if [ ! -f ~/.gitconfig ]; then
