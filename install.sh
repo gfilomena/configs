@@ -250,6 +250,13 @@ else
   echo BOLT ALREADY INSTALLED
 fi
 
+if ! [ -x "$(command -v teamviewer)" ]; then
+  echo INSTALLING TEAMVIEWER
+  installTeamviewer
+else
+  echo TEAMVIEWER ALREADY INSTALLED
+fi
+
 echo '# CONFIGURATIONS'
 
 if [ ! -f ~/.gitconfig ]; then

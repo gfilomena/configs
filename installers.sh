@@ -297,6 +297,10 @@ function installBolt {
   yay -Sy --noconfirm bolt
 }
 
+function installTeamviewer {
+  yay -Sy --noconfirm teamviewer
+}
+
 ## CONFIGURATION
 
 function configureGit {
